@@ -83,8 +83,9 @@ function renderSvg(template, owner, repoCount, languages, generatedAt) {
     const y = 1042 + row * 50;
     return `<g transform="translate(${x} ${y})">
       <rect width="12" height="12" rx="2" fill="${COLORS[index % COLORS.length]}"/>
-      <text x="28" y="12" fill="#dce2e4" class="small" font-weight="700">${escapeXml(item.name)}</text>
-      <text x="480" y="12" fill="#00f0ff" class="small" font-weight="700" text-anchor="end">${item.percentage.toFixed(1)}%</text>
+      <text x="28" y="13" fill="#dce2e4" class="language">${escapeXml(item.name)}</text>
+      <text x="480" y="13" fill="#00f0ff" class="percentage" text-anchor="end">${item.percentage.toFixed(1)}%</text>
+      <path d="M28 27H480" fill="none" stroke="#222a2c" stroke-width="1"/>
     </g>`;
   }).join("\n    ");
 
@@ -96,8 +97,8 @@ function renderSvg(template, owner, repoCount, languages, generatedAt) {
   const telemetry = `<g id="language-telemetry">
     <path d="M38 850H1162V1206L1126 1242H38Z" fill="#0f1314" stroke="#394245" stroke-width="2"/>
     <rect x="38" y="850" width="306" height="44" fill="#fcee0a"/>
-    <text x="62" y="879" fill="#080a0b" class="label">03 // LANGUAGE TELEMETRY</text>
-    <circle cx="1120" cy="872" r="7" fill="#00f0ff" filter="url(#cyanGlow)" class="blink"/>
+    <text x="62" y="879" fill="#080a0b" class="label">03 / LANGUAGE TELEMETRY</text>
+    <circle cx="1120" cy="872" r="5" fill="#00f0ff" filter="url(#cyanGlow)"/>
     <text x="1098" y="878" fill="#7d898c" class="small" text-anchor="end">LIVE</text>
     <text x="72" y="928" fill="#f6f7f8" class="display" font-size="28">CODEBASE COMPOSITION</text>
     <text x="1128" y="928" fill="#7d898c" class="small" text-anchor="end">${repoCount} REPOS · ${(totalBytes / 1024 / 1024).toFixed(1)} MiB INDEXED</text>
