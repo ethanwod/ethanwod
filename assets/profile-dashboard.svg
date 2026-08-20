@@ -1,4 +1,4 @@
-<svg data-signature="9bb7615cddffc750" xmlns="http://www.w3.org/2000/svg" width="1200" height="1360" viewBox="0 0 1200 1360" role="img" aria-labelledby="title desc">
+<svg data-signature="7c2dc62a256ee5b3" xmlns="http://www.w3.org/2000/svg" width="1200" height="1360" viewBox="0 0 1200 1360" role="img" aria-labelledby="title desc">
   <title id="title">ethanwod · Ethanwod cyberpunk system profile</title>
   <desc id="desc">An original animated future-tech interface presenting Ethanwod's identity, computer science interests, and live repository language telemetry.</desc>
 
@@ -37,13 +37,16 @@
   </defs>
 
   <style>
-    text { font-family: 'Segoe UI', Arial, sans-serif; }
-    .display { font-family: 'Arial Black', 'Segoe UI Black', Arial, sans-serif; font-weight: 900; }
+    text { font-family: 'Segoe UI Variable Text', 'Segoe UI', Helvetica, Arial, sans-serif; }
+    .display { font-family: Bahnschrift, 'Arial Narrow', 'Segoe UI', sans-serif; font-weight: 700; letter-spacing: .7px; }
     .wordmark { font-family: 'Arial Black', 'Segoe UI Black', Arial, sans-serif; font-size: 76px; font-weight: 900; letter-spacing: -2px; }
-    .label { font-family: Consolas, Monaco, 'Courier New', monospace; font-size: 16px; font-weight: 700; letter-spacing: 1.5px; }
-    .small { font-family: Consolas, Monaco, 'Courier New', monospace; font-size: 15px; letter-spacing: 1px; }
+    .label { font-family: Bahnschrift, 'Arial Narrow', 'Segoe UI', sans-serif; font-size: 15px; font-weight: 700; letter-spacing: 1.8px; }
+    .small { font-family: 'Segoe UI Variable Text', 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 500; letter-spacing: .65px; }
+    .key { font-family: 'Segoe UI Variable Text', 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 650; letter-spacing: 1.25px; }
+    .value { font-family: 'Segoe UI Variable Text', 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 19px; font-weight: 600; letter-spacing: .2px; }
+    .language { font-family: Bahnschrift, 'Arial Narrow', 'Segoe UI', sans-serif; font-size: 18px; font-weight: 600; letter-spacing: .45px; }
+    .percentage { font-family: Bahnschrift, 'Segoe UI Variable Text', 'Segoe UI', sans-serif; font-size: 16px; font-weight: 600; font-variant-numeric: tabular-nums; letter-spacing: .35px; }
     .body { font-size: 19px; font-weight: 500; letter-spacing: .15px; }
-    .mono { font-family: Consolas, Monaco, 'Courier New', monospace; }
     .blink { animation: blink 1.6s steps(2,end) infinite; }
     .scan { animation: scan 7s linear infinite; }
     .flow { stroke-dasharray: 18 12; animation: flow 1.5s linear infinite; }
@@ -94,82 +97,99 @@
     <rect x="596" y="566" width="12" height="252" fill="#00f0ff"/>
   </g>
 
-  <text x="76" y="612" fill="#fcee0a" class="label">01 // IDENTITY</text>
-  <text x="76" y="660" fill="#7d898c" class="small">USER</text>
-  <text x="200" y="660" fill="#f6f7f8" class="body">ethanwod</text>
-  <text x="76" y="704" fill="#7d898c" class="small">STATUS</text>
-  <text x="200" y="704" fill="#00f0ff" class="body blink">ONLINE</text>
-  <text x="76" y="748" fill="#7d898c" class="small">MODE</text>
-  <text x="200" y="748" fill="#f6f7f8" class="body">LEARN · BUILD · SHIP</text>
+  <text x="76" y="612" fill="#fcee0a" class="label">01 / IDENTITY</text>
+  <text x="532" y="612" fill="#4d575a" class="small" text-anchor="end">PERSONAL NODE</text>
+  <path d="M76 628H532" fill="none" stroke="#252d2f"/>
+  <text x="76" y="660" fill="#899497" class="key">USER</text>
+  <text x="200" y="660" fill="#f6f7f8" class="value">ethanwod</text>
+  <path d="M200 674H532" fill="none" stroke="#202729"/>
+  <text x="76" y="704" fill="#899497" class="key">STATUS</text>
+  <circle cx="205" cy="697" r="4" fill="#00f0ff" filter="url(#cyanGlow)"/>
+  <text x="220" y="704" fill="#00f0ff" class="value">ONLINE</text>
+  <path d="M200 718H532" fill="none" stroke="#202729"/>
+  <text x="76" y="748" fill="#899497" class="key">MODE</text>
+  <text x="200" y="748" fill="#f6f7f8" class="value">LEARN · BUILD · SHIP</text>
   <text x="76" y="782" fill="#899497" font-size="16">Algorithms meet machines.</text>
 
-  <text x="634" y="612" fill="#00f0ff" class="label">02 // LOADOUT</text>
-  <text x="634" y="660" fill="#7d898c" class="small">CORE</text>
-  <text x="752" y="660" fill="#f6f7f8" class="body">Algorithms · Data</text>
-  <text x="634" y="704" fill="#7d898c" class="small">SYSTEM</text>
-  <text x="752" y="704" fill="#f6f7f8" class="body">OS · Net · Compiler</text>
-  <text x="634" y="748" fill="#7d898c" class="small">VISION</text>
-  <text x="752" y="748" fill="#f6f7f8" class="body">AI · Computer Vision</text>
+  <text x="634" y="612" fill="#00f0ff" class="label">02 / LOADOUT</text>
+  <text x="1124" y="612" fill="#4d575a" class="small" text-anchor="end">CAPABILITY MAP</text>
+  <path d="M634 628H1124" fill="none" stroke="#252d2f"/>
+  <text x="634" y="660" fill="#899497" class="key">CORE</text>
+  <text x="752" y="660" fill="#f6f7f8" class="value">Algorithms · Data</text>
+  <path d="M752 674H1124" fill="none" stroke="#202729"/>
+  <text x="634" y="704" fill="#899497" class="key">SYSTEM</text>
+  <text x="752" y="704" fill="#f6f7f8" class="value">OS · Net · Compiler</text>
+  <path d="M752 718H1124" fill="none" stroke="#202729"/>
+  <text x="634" y="748" fill="#899497" class="key">VISION</text>
+  <text x="752" y="748" fill="#f6f7f8" class="value">AI · Computer Vision</text>
   <text x="634" y="782" fill="#899497" font-size="16">Practical engineering, end to end.</text>
 
   <g id="language-telemetry">
     <path d="M38 850H1162V1206L1126 1242H38Z" fill="#0f1314" stroke="#394245" stroke-width="2"/>
     <rect x="38" y="850" width="306" height="44" fill="#fcee0a"/>
-    <text x="62" y="879" fill="#080a0b" class="label">03 // LANGUAGE TELEMETRY</text>
-    <circle cx="1120" cy="872" r="7" fill="#00f0ff" filter="url(#cyanGlow)" class="blink"/>
+    <text x="62" y="879" fill="#080a0b" class="label">03 / LANGUAGE TELEMETRY</text>
+    <circle cx="1120" cy="872" r="5" fill="#00f0ff" filter="url(#cyanGlow)"/>
     <text x="1098" y="878" fill="#7d898c" class="small" text-anchor="end">LIVE</text>
     <text x="72" y="928" fill="#f6f7f8" class="display" font-size="28">CODEBASE COMPOSITION</text>
     <text x="1128" y="928" fill="#7d898c" class="small" text-anchor="end">4 REPOS · 0.6 MiB INDEXED</text>
     <rect x="72" y="958" width="1056" height="22" rx="3" fill="#20282a"/>
-    <g><rect x="72.00" y="958" width="471.43" height="22" fill="#fcee0a"/>
-    <rect x="543.43" y="958" width="223.17" height="22" fill="#00f0ff"/>
-    <rect x="766.61" y="958" width="161.60" height="22" fill="#ff365d"/>
-    <rect x="928.20" y="958" width="71.23" height="22" fill="#7d5cff"/>
-    <rect x="999.43" y="958" width="34.06" height="22" fill="#54e38e"/>
-    <rect x="1033.49" y="958" width="29.11" height="22" fill="#ff9f1c"/>
-    <rect x="1062.60" y="958" width="23.89" height="22" fill="#c7d0d3"/>
-    <rect x="1086.49" y="958" width="41.51" height="22" fill="#547980"/></g>
+    <g><rect x="72.00" y="958" width="471.45" height="22" fill="#fcee0a"/>
+    <rect x="543.45" y="958" width="223.04" height="22" fill="#00f0ff"/>
+    <rect x="766.49" y="958" width="161.73" height="22" fill="#ff365d"/>
+    <rect x="928.22" y="958" width="70.82" height="22" fill="#7d5cff"/>
+    <rect x="999.04" y="958" width="33.83" height="22" fill="#54e38e"/>
+    <rect x="1032.86" y="958" width="29.60" height="22" fill="#ff9f1c"/>
+    <rect x="1062.46" y="958" width="24.31" height="22" fill="#c7d0d3"/>
+    <rect x="1086.77" y="958" width="41.23" height="22" fill="#547980"/></g>
     <text x="72" y="1008" fill="#687477" class="small">SOURCE · GITHUB LINGUIST BYTE COUNTS</text>
-    <text x="1128" y="1008" fill="#687477" class="small" text-anchor="end">UPDATED 2026-08-20 16:13 CST</text>
+    <text x="1128" y="1008" fill="#687477" class="small" text-anchor="end">UPDATED 2026-08-20 16:27 CST</text>
     <g transform="translate(76 1042)">
       <rect width="12" height="12" rx="2" fill="#fcee0a"/>
-      <text x="28" y="12" fill="#dce2e4" class="small" font-weight="700">Python</text>
-      <text x="480" y="12" fill="#00f0ff" class="small" font-weight="700" text-anchor="end">44.6%</text>
+      <text x="28" y="13" fill="#dce2e4" class="language">Python</text>
+      <text x="480" y="13" fill="#00f0ff" class="percentage" text-anchor="end">44.6%</text>
+      <path d="M28 27H480" fill="none" stroke="#222a2c" stroke-width="1"/>
     </g>
     <g transform="translate(620 1042)">
       <rect width="12" height="12" rx="2" fill="#00f0ff"/>
-      <text x="28" y="12" fill="#dce2e4" class="small" font-weight="700">C++</text>
-      <text x="480" y="12" fill="#00f0ff" class="small" font-weight="700" text-anchor="end">21.1%</text>
+      <text x="28" y="13" fill="#dce2e4" class="language">C++</text>
+      <text x="480" y="13" fill="#00f0ff" class="percentage" text-anchor="end">21.1%</text>
+      <path d="M28 27H480" fill="none" stroke="#222a2c" stroke-width="1"/>
     </g>
     <g transform="translate(76 1092)">
       <rect width="12" height="12" rx="2" fill="#ff365d"/>
-      <text x="28" y="12" fill="#dce2e4" class="small" font-weight="700">C</text>
-      <text x="480" y="12" fill="#00f0ff" class="small" font-weight="700" text-anchor="end">15.3%</text>
+      <text x="28" y="13" fill="#dce2e4" class="language">C</text>
+      <text x="480" y="13" fill="#00f0ff" class="percentage" text-anchor="end">15.3%</text>
+      <path d="M28 27H480" fill="none" stroke="#222a2c" stroke-width="1"/>
     </g>
     <g transform="translate(620 1092)">
       <rect width="12" height="12" rx="2" fill="#7d5cff"/>
-      <text x="28" y="12" fill="#dce2e4" class="small" font-weight="700">Verilog</text>
-      <text x="480" y="12" fill="#00f0ff" class="small" font-weight="700" text-anchor="end">6.7%</text>
+      <text x="28" y="13" fill="#dce2e4" class="language">Verilog</text>
+      <text x="480" y="13" fill="#00f0ff" class="percentage" text-anchor="end">6.7%</text>
+      <path d="M28 27H480" fill="none" stroke="#222a2c" stroke-width="1"/>
     </g>
     <g transform="translate(76 1142)">
       <rect width="12" height="12" rx="2" fill="#54e38e"/>
-      <text x="28" y="12" fill="#dce2e4" class="small" font-weight="700">Cool</text>
-      <text x="480" y="12" fill="#00f0ff" class="small" font-weight="700" text-anchor="end">3.2%</text>
+      <text x="28" y="13" fill="#dce2e4" class="language">Cool</text>
+      <text x="480" y="13" fill="#00f0ff" class="percentage" text-anchor="end">3.2%</text>
+      <path d="M28 27H480" fill="none" stroke="#222a2c" stroke-width="1"/>
     </g>
     <g transform="translate(620 1142)">
       <rect width="12" height="12" rx="2" fill="#ff9f1c"/>
-      <text x="28" y="12" fill="#dce2e4" class="small" font-weight="700">Lex</text>
-      <text x="480" y="12" fill="#00f0ff" class="small" font-weight="700" text-anchor="end">2.8%</text>
+      <text x="28" y="13" fill="#dce2e4" class="language">Lex</text>
+      <text x="480" y="13" fill="#00f0ff" class="percentage" text-anchor="end">2.8%</text>
+      <path d="M28 27H480" fill="none" stroke="#222a2c" stroke-width="1"/>
     </g>
     <g transform="translate(76 1192)">
       <rect width="12" height="12" rx="2" fill="#c7d0d3"/>
-      <text x="28" y="12" fill="#dce2e4" class="small" font-weight="700">Yacc</text>
-      <text x="480" y="12" fill="#00f0ff" class="small" font-weight="700" text-anchor="end">2.3%</text>
+      <text x="28" y="13" fill="#dce2e4" class="language">Yacc</text>
+      <text x="480" y="13" fill="#00f0ff" class="percentage" text-anchor="end">2.3%</text>
+      <path d="M28 27H480" fill="none" stroke="#222a2c" stroke-width="1"/>
     </g>
     <g transform="translate(620 1192)">
       <rect width="12" height="12" rx="2" fill="#547980"/>
-      <text x="28" y="12" fill="#dce2e4" class="small" font-weight="700">Other</text>
-      <text x="480" y="12" fill="#00f0ff" class="small" font-weight="700" text-anchor="end">3.9%</text>
+      <text x="28" y="13" fill="#dce2e4" class="language">Other</text>
+      <text x="480" y="13" fill="#00f0ff" class="percentage" text-anchor="end">3.9%</text>
+      <path d="M28 27H480" fill="none" stroke="#222a2c" stroke-width="1"/>
     </g>
   </g>
 
