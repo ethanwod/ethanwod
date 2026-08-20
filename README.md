@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/cyberpunk-banner.png" width="100%" alt="Cyberpunk developer banner" />
+  <img src="assets/cyberpunk-banner.jpg" width="100%" alt="Cyberpunk developer banner" />
 </div>
 
 <div align="center">
