@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1280" viewBox="0 0 1200 1280" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="930" viewBox="0 0 1200 930" role="img" aria-labelledby="title desc">
   <title id="title">Ethanwod cyberpunk system profile</title>
-  <desc id="desc">An original animated future-tech interface presenting Ethanwod's computer science interests and featured project.</desc>
+  <desc id="desc">An original animated future-tech interface presenting Ethanwod's identity and computer science interests.</desc>
 
   <defs>
     <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
@@ -18,16 +18,12 @@
       <stop offset="1" stop-color="#006f79" stop-opacity="0"/>
     </linearGradient>
     <linearGradient id="heroShade" x1="0" x2="1">
-      <stop offset="0" stop-color="#050708" stop-opacity="0.48"/>
-      <stop offset="0.52" stop-color="#050708" stop-opacity="0.12"/>
+      <stop offset="0" stop-color="#050708" stop-opacity="0.64"/>
+      <stop offset="0.52" stop-color="#050708" stop-opacity="0.18"/>
       <stop offset="1" stop-color="#050708" stop-opacity="0"/>
     </linearGradient>
     <filter id="cyanGlow" x="-60%" y="-60%" width="220%" height="220%">
       <feGaussianBlur stdDeviation="4" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <filter id="yellowGlow" x="-60%" y="-60%" width="220%" height="220%">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
       <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
     <clipPath id="heroClip"><path d="M38 38H1162V414L1116 460H38Z"/></clipPath>
@@ -36,23 +32,21 @@
   <style>
     text { font-family: 'Segoe UI', Arial, sans-serif; }
     .display { font-family: 'Arial Black', 'Segoe UI Black', Arial, sans-serif; font-weight: 900; }
-    .label { font-family: Consolas, Monaco, 'Courier New', monospace; font-size: 17px; font-weight: 700; letter-spacing: 2px; }
+    .label { font-family: Consolas, Monaco, 'Courier New', monospace; font-size: 16px; font-weight: 700; letter-spacing: 1.5px; }
     .small { font-family: Consolas, Monaco, 'Courier New', monospace; font-size: 15px; letter-spacing: 1px; }
-    .body { font-size: 20px; font-weight: 500; letter-spacing: .2px; }
+    .body { font-size: 19px; font-weight: 500; letter-spacing: .15px; }
     .mono { font-family: Consolas, Monaco, 'Courier New', monospace; }
     .blink { animation: blink 1.6s steps(2,end) infinite; }
     .scan { animation: scan 7s linear infinite; }
     .flow { stroke-dasharray: 18 12; animation: flow 1.5s linear infinite; }
-    .pulse { animation: pulse 2.4s ease-in-out infinite; transform-origin: center; }
     @keyframes blink { 50% { opacity: .2; } }
-    @keyframes scan { from { transform: translateY(-90px); } to { transform: translateY(1370px); } }
+    @keyframes scan { from { transform: translateY(-90px); } to { transform: translateY(1020px); } }
     @keyframes flow { to { stroke-dashoffset: -60; } }
-    @keyframes pulse { 50% { opacity: .45; } }
   </style>
 
-  <rect width="1200" height="1280" rx="16" fill="#080a0b"/>
-  <rect x="1" y="1" width="1198" height="1278" rx="15" fill="none" stroke="#30383a" stroke-width="2"/>
-  <rect width="1200" height="1280" rx="16" fill="url(#grid)" opacity="0.72"/>
+  <rect width="1200" height="930" rx="16" fill="#080a0b"/>
+  <rect x="1" y="1" width="1198" height="928" rx="15" fill="none" stroke="#30383a" stroke-width="2"/>
+  <rect width="1200" height="930" rx="16" fill="url(#grid)" opacity="0.48"/>
 
   <!-- Hero frame -->
   <path d="M38 38H1162V414L1116 460H38Z" fill="#0d1011" stroke="#fcee0a" stroke-width="3"/>
@@ -69,8 +63,8 @@
   </g>
   <text x="52" y="58" fill="#080a0b" class="label">PROFILE_07</text>
   <text x="64" y="128" fill="#fcee0a" font-size="22" font-weight="700" letter-spacing="5">NEON GRID // DATA FEED</text>
-  <text x="60" y="236" fill="#f6f7f8" font-size="76" class="display" letter-spacing="-1">ETHANWOD</text>
-  <text x="64" y="284" fill="#00f0ff" font-size="23" class="display" letter-spacing="3">COMPUTER SCIENCE · AI · SYSTEMS</text>
+  <text x="60" y="236" fill="#f6f7f8" font-size="72" class="display" letter-spacing="-1">ETHANWOD</text>
+  <text x="64" y="284" fill="#00f0ff" font-size="22" class="display" letter-spacing="2.2">COMPUTER SCIENCE · AI · SYSTEMS</text>
   <path d="M64 318H446l18 18h126" fill="none" stroke="#fcee0a" stroke-width="5"/>
   <circle cx="64" cy="372" r="8" fill="#00f0ff" filter="url(#cyanGlow)" class="blink"/>
   <text x="84" y="379" fill="#e5e9ea" class="body">UPLINK ESTABLISHED</text>
@@ -108,23 +102,9 @@
   <text x="752" y="748" fill="#f6f7f8" class="body">AI · Computer Vision</text>
   <text x="634" y="782" fill="#899497" font-size="16">Practical engineering, end to end.</text>
 
-  <!-- Project module -->
-  <path d="M38 858H1162V1090L1118 1134H38Z" fill="#0f1314" stroke="#fcee0a" stroke-width="3"/>
-  <rect x="38" y="858" width="1124" height="52" fill="#fcee0a"/>
-  <text x="62" y="892" fill="#080a0b" class="label">03 // FEATURED ACCESS POINT</text>
-  <text x="72" y="970" fill="#f6f7f8" font-size="36" class="display">XJTU-CS2020</text>
-  <text x="72" y="1014" fill="#00f0ff" class="body">COMPUTER SCIENCE FIELD ARCHIVE</text>
-  <text x="72" y="1056" fill="#9aa4a7" font-size="18">AI  /  CV  /  OS  /  NETWORKS  /  COMPILERS  /  GRAPHICS  /  EMBEDDED</text>
-  <g transform="translate(902 947)">
-    <circle cx="78" cy="50" r="67" fill="none" stroke="#263033" stroke-width="16"/>
-    <path d="M78-17A67 67 0 0 1 145 50" fill="none" stroke="#00f0ff" stroke-width="16" filter="url(#cyanGlow)" class="pulse"/>
-    <text x="78" y="44" fill="#fcee0a" font-size="14" text-anchor="middle" class="label">OPEN</text>
-    <text x="78" y="69" fill="#f6f7f8" font-size="14" text-anchor="middle">DATA</text>
-  </g>
-
   <!-- Footer -->
-  <path d="M38 1170H358l24 24h426l24-24h330" fill="none" stroke="#ff365d" stroke-width="4"/>
-  <text x="600" y="1232" fill="#fcee0a" font-size="24" class="display" text-anchor="middle" letter-spacing="3">WAKE THE CODE // BREAK THE LOOP</text>
-  <text x="600" y="1260" fill="#667174" font-size="13" text-anchor="middle" letter-spacing="2">ORIGINAL FUTURE-TECH INTERFACE · LOCAL ASSETS ONLY</text>
+  <path d="M38 852H358l24 20h426l24-20h330" fill="none" stroke="#ff365d" stroke-width="3"/>
+  <text x="600" y="892" fill="#fcee0a" font-size="22" class="display" text-anchor="middle" letter-spacing="2.2">WAKE THE CODE // BREAK THE LOOP</text>
+  <text x="600" y="918" fill="#667174" font-size="13" text-anchor="middle" letter-spacing="1.5">ORIGINAL FUTURE-TECH INTERFACE · LOCAL ASSETS ONLY</text>
 </svg>
 
