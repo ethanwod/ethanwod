@@ -26,12 +26,20 @@
       <feGaussianBlur stdDeviation="4" result="blur"/>
       <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
+    <mask id="wordmarkCuts" maskUnits="userSpaceOnUse" x="-24" y="-92" width="640" height="124">
+      <rect x="-24" y="-92" width="640" height="124" fill="white"/>
+      <path d="M104-88h18L106 12H88ZM258-88h14L258 12h-18ZM414-88h16L414 12h-20Z" fill="black"/>
+    </mask>
+    <clipPath id="wordmarkSlice" clipPathUnits="userSpaceOnUse">
+      <path d="M-20-66H620v11H-20ZM-20-27H620v9H-20Z"/>
+    </clipPath>
     <clipPath id="heroClip"><path d="M38 38H1162V414L1116 460H38Z"/></clipPath>
   </defs>
 
   <style>
     text { font-family: 'Segoe UI', Arial, sans-serif; }
     .display { font-family: 'Arial Black', 'Segoe UI Black', Arial, sans-serif; font-weight: 900; }
+    .wordmark { font-family: 'Arial Black', 'Segoe UI Black', Arial, sans-serif; font-size: 76px; font-weight: 900; letter-spacing: -2px; }
     .label { font-family: Consolas, Monaco, 'Courier New', monospace; font-size: 16px; font-weight: 700; letter-spacing: 1.5px; }
     .small { font-family: Consolas, Monaco, 'Courier New', monospace; font-size: 15px; letter-spacing: 1px; }
     .body { font-size: 19px; font-weight: 500; letter-spacing: .15px; }
@@ -63,11 +71,17 @@
   </g>
   <text x="52" y="58" fill="#080a0b" class="label">PROFILE_07</text>
   <text x="64" y="128" fill="#fcee0a" font-size="22" font-weight="700" letter-spacing="5">NEON GRID // DATA FEED</text>
-  <text x="60" y="236" fill="#f6f7f8" font-size="72" class="display" letter-spacing="-1">ETHANWOD</text>
-  <text x="64" y="284" fill="#00f0ff" font-size="22" class="display" letter-spacing="2.2">COMPUTER SCIENCE · AI · SYSTEMS</text>
-  <path d="M64 318H446l18 18h126" fill="none" stroke="#fcee0a" stroke-width="5"/>
-  <circle cx="64" cy="372" r="8" fill="#00f0ff" filter="url(#cyanGlow)" class="blink"/>
-  <text x="84" y="379" fill="#e5e9ea" class="body">UPLINK ESTABLISHED</text>
+  <g transform="translate(66 238) skewX(-10)">
+    <text x="-7" y="6" fill="#ff365d" stroke="#080a0b" stroke-width="5" paint-order="stroke" class="wordmark" opacity="0.9">ETHANWOD</text>
+    <text x="0" y="0" fill="#fcee0a" stroke="#080a0b" stroke-width="5" paint-order="stroke" class="wordmark" mask="url(#wordmarkCuts)">ETHANWOD</text>
+    <text x="5" y="-3" fill="none" stroke="#00f0ff" stroke-width="2" class="wordmark" clip-path="url(#wordmarkSlice)">ETHANWOD</text>
+  </g>
+  <path d="M58 250H338l20 12h176l-24 12H352l-22-10H72Z" fill="#fcee0a"/>
+  <path d="M510 274h74l-16 8h-76z" fill="#00f0ff"/>
+  <text x="64" y="306" fill="#00f0ff" font-size="22" class="display" letter-spacing="2.2">COMPUTER SCIENCE · AI · SYSTEMS</text>
+  <path d="M64 330H430l18 16h142" fill="none" stroke="#fcee0a" stroke-width="4"/>
+  <circle cx="64" cy="390" r="8" fill="#00f0ff" filter="url(#cyanGlow)" class="blink"/>
+  <text x="84" y="397" fill="#e5e9ea" class="body">UPLINK ESTABLISHED</text>
   <text x="1040" y="452" fill="#080a0b" class="label">ONLINE</text>
 
   <!-- Rail -->
