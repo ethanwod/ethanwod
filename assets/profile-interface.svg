@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1280" viewBox="0 0 1200 1280" role="img" aria-labelledby="title desc">
+  <title id="title">Ethanwod cyberpunk system profile</title>
+  <desc id="desc">An original animated future-tech interface presenting Ethanwod's computer science interests and featured project.</desc>
+
+  <defs>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#192022" stroke-width="1"/>
+    </pattern>
+    <pattern id="micro" width="8" height="8" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="0.8" fill="#fcee0a" opacity="0.22"/>
+    </pattern>
+    <linearGradient id="yellowFade" x1="0" x2="1">
+      <stop offset="0" stop-color="#fcee0a"/>
+      <stop offset="1" stop-color="#b9ad00"/>
+    </linearGradient>
+    <linearGradient id="cyanFade" x1="0" x2="1">
+      <stop offset="0" stop-color="#00f0ff"/>
+      <stop offset="1" stop-color="#006f79" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="cyanGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="yellowGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="heroClip"><path d="M38 38H1162V414L1116 460H38Z"/></clipPath>
+  </defs>
+
+  <style>
+    text { font-family: Consolas, 'Courier New', monospace; }
+    .label { font-size: 17px; font-weight: 700; letter-spacing: 2px; }
+    .small { font-size: 15px; letter-spacing: 1px; }
+    .body { font-size: 20px; }
+    .blink { animation: blink 1.6s steps(2,end) infinite; }
+    .scan { animation: scan 7s linear infinite; }
+    .flow { stroke-dasharray: 18 12; animation: flow 1.5s linear infinite; }
+    .pulse { animation: pulse 2.4s ease-in-out infinite; transform-origin: center; }
+    @keyframes blink { 50% { opacity: .2; } }
+    @keyframes scan { from { transform: translateY(-90px); } to { transform: translateY(1370px); } }
+    @keyframes flow { to { stroke-dashoffset: -60; } }
+    @keyframes pulse { 50% { opacity: .45; } }
+  </style>
+
+  <rect width="1200" height="1280" rx="16" fill="#080a0b"/>
+  <rect x="1" y="1" width="1198" height="1278" rx="15" fill="none" stroke="#30383a" stroke-width="2"/>
+  <rect width="1200" height="1280" rx="16" fill="url(#grid)" opacity="0.72"/>
+
+  <!-- Hero frame -->
+  <path d="M38 38H1162V414L1116 460H38Z" fill="#0d1011" stroke="#fcee0a" stroke-width="3"/>
+  <g clip-path="url(#heroClip)">
+    <rect x="38" y="38" width="1124" height="422" fill="url(#micro)"/>
+    <circle cx="956" cy="150" r="218" fill="#fcee0a" opacity="0.92"/>
+    <circle cx="956" cy="150" r="154" fill="none" stroke="#080a0b" stroke-width="3" opacity="0.45"/>
+    <circle cx="956" cy="150" r="112" fill="none" stroke="#080a0b" stroke-width="2" stroke-dasharray="10 9" opacity="0.7"/>
+
+    <!-- Original city silhouette -->
+    <g fill="#090b0c">
+      <path d="M620 390V268h52v122zm62 0V222h74v168zm84 0V286h43v104zm52 0V174h70v216zm80 0V236h40v154zm50 0V116h82v274zm92 0V204h54v186zm64 0V250h58v140z"/>
+      <path d="M642 268l26-36 22 36zm208-94 34-54 36 54zm128-58 35-72 41 72zm96 88 27-45 28 45z"/>
+    </g>
+    <g fill="#00f0ff" opacity="0.9">
+      <rect x="699" y="246" width="7" height="22"/><rect x="718" y="246" width="7" height="22"/>
+      <rect x="841" y="207" width="8" height="25"/><rect x="865" y="207" width="8" height="25"/>
+      <rect x="978" y="151" width="9" height="30"/><rect x="1003" y="151" width="9" height="30"/>
+      <rect x="1083" y="235" width="8" height="28"/>
+    </g>
+    <path d="M548 390C678 336 790 418 914 346S1101 304 1194 330" fill="none" stroke="#00f0ff" stroke-width="5" filter="url(#cyanGlow)"/>
+    <path d="M576 406C720 350 798 440 942 368S1100 332 1194 348" fill="none" stroke="#ff365d" stroke-width="3" opacity="0.85"/>
+
+    <rect class="scan" x="38" y="0" width="1124" height="58" fill="url(#cyanFade)" opacity="0.08"/>
+  </g>
+
+  <g fill="#fcee0a">
+    <rect x="38" y="38" width="158" height="28"/>
+    <path d="M1010 432h106l46-46v74h-152z"/>
+  </g>
+  <text x="52" y="58" fill="#080a0b" class="label">PROFILE_07</text>
+  <text x="64" y="128" fill="#fcee0a" font-size="22" font-weight="700" letter-spacing="5">NEON GRID // DATA FEED</text>
+  <text x="60" y="236" fill="#f6f7f8" font-size="76" font-weight="800" letter-spacing="2">ETHANWOD</text>
+  <text x="64" y="284" fill="#00f0ff" font-size="23" font-weight="700" letter-spacing="4">COMPUTER SCIENCE · AI · SYSTEMS</text>
+  <path d="M64 318H446l18 18h126" fill="none" stroke="#fcee0a" stroke-width="5"/>
+  <circle cx="64" cy="372" r="8" fill="#00f0ff" filter="url(#cyanGlow)" class="blink"/>
+  <text x="84" y="379" fill="#e5e9ea" class="body">UPLINK ESTABLISHED</text>
+  <text x="1040" y="452" fill="#080a0b" class="label">ONLINE</text>
+
+  <!-- Rail -->
+  <path d="M38 500H430l22 18h708" fill="none" stroke="#fcee0a" stroke-width="4"/>
+  <path class="flow" d="M38 522H1162" fill="none" stroke="#00f0ff" stroke-width="2"/>
+  <rect x="38" y="490" width="118" height="30" fill="#fcee0a"/>
+  <text x="53" y="511" fill="#080a0b" class="label">DOSSIER</text>
+
+  <!-- Main panels -->
+  <g>
+    <path d="M38 566H570V790L542 818H38Z" fill="#0f1314" stroke="#394245" stroke-width="2"/>
+    <path d="M596 566H1162V790L1134 818H596Z" fill="#0f1314" stroke="#394245" stroke-width="2"/>
+    <rect x="38" y="566" width="12" height="252" fill="#fcee0a"/>
+    <rect x="596" y="566" width="12" height="252" fill="#00f0ff"/>
+  </g>
+
+  <text x="76" y="612" fill="#fcee0a" class="label">01 // IDENTITY</text>
+  <text x="76" y="660" fill="#7d898c" class="small">USER</text>
+  <text x="200" y="660" fill="#f6f7f8" class="body">ethanwod</text>
+  <text x="76" y="704" fill="#7d898c" class="small">STATUS</text>
+  <text x="200" y="704" fill="#00f0ff" class="body blink">ONLINE</text>
+  <text x="76" y="748" fill="#7d898c" class="small">MODE</text>
+  <text x="200" y="748" fill="#f6f7f8" class="body">LEARN · BUILD · SHIP</text>
+  <text x="76" y="782" fill="#899497" font-size="16">Algorithms meet machines.</text>
+
+  <text x="634" y="612" fill="#00f0ff" class="label">02 // LOADOUT</text>
+  <text x="634" y="660" fill="#7d898c" class="small">CORE</text>
+  <text x="752" y="660" fill="#f6f7f8" class="body">Algorithms · Data</text>
+  <text x="634" y="704" fill="#7d898c" class="small">SYSTEM</text>
+  <text x="752" y="704" fill="#f6f7f8" class="body">OS · Net · Compiler</text>
+  <text x="634" y="748" fill="#7d898c" class="small">VISION</text>
+  <text x="752" y="748" fill="#f6f7f8" class="body">AI · Computer Vision</text>
+  <text x="634" y="782" fill="#899497" font-size="16">Practical engineering, end to end.</text>
+
+  <!-- Project module -->
+  <path d="M38 858H1162V1090L1118 1134H38Z" fill="#0f1314" stroke="#fcee0a" stroke-width="3"/>
+  <rect x="38" y="858" width="1124" height="52" fill="#fcee0a"/>
+  <text x="62" y="892" fill="#080a0b" class="label">03 // FEATURED ACCESS POINT</text>
+  <text x="72" y="970" fill="#f6f7f8" font-size="36" font-weight="800">XJTU-CS2020</text>
+  <text x="72" y="1014" fill="#00f0ff" class="body">COMPUTER SCIENCE FIELD ARCHIVE</text>
+  <text x="72" y="1056" fill="#9aa4a7" font-size="18">AI  /  CV  /  OS  /  NETWORKS  /  COMPILERS  /  GRAPHICS  /  EMBEDDED</text>
+  <g transform="translate(902 947)">
+    <circle cx="78" cy="50" r="67" fill="none" stroke="#263033" stroke-width="16"/>
+    <path d="M78-17A67 67 0 0 1 145 50" fill="none" stroke="#00f0ff" stroke-width="16" filter="url(#cyanGlow)" class="pulse"/>
+    <text x="78" y="44" fill="#fcee0a" font-size="14" text-anchor="middle" class="label">OPEN</text>
+    <text x="78" y="69" fill="#f6f7f8" font-size="14" text-anchor="middle">DATA</text>
+  </g>
+
+  <!-- Footer -->
+  <path d="M38 1170H358l24 24h426l24-24h330" fill="none" stroke="#ff365d" stroke-width="4"/>
+  <text x="600" y="1232" fill="#fcee0a" font-size="24" font-weight="700" text-anchor="middle" letter-spacing="4">WAKE THE CODE // BREAK THE LOOP</text>
+  <text x="600" y="1260" fill="#667174" font-size="13" text-anchor="middle" letter-spacing="2">ORIGINAL FUTURE-TECH INTERFACE · LOCAL ASSETS ONLY</text>
+</svg>
+
