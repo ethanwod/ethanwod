@@ -1,4 +1,4 @@
-<svg data-signature="d5f885fdf7373df0" xmlns="http://www.w3.org/2000/svg" width="1200" height="1360" viewBox="0 0 1200 1360" role="img" aria-labelledby="title desc">
+<svg data-signature="ad82edbe33fc347b" xmlns="http://www.w3.org/2000/svg" width="1200" height="1360" viewBox="0 0 1200 1360" role="img" aria-labelledby="title desc">
   <title id="title">ethanwod · Ethanwod cyberpunk system profile</title>
   <desc id="desc">An original animated future-tech interface presenting Ethanwod's identity, computer science interests, and live repository language telemetry.</desc>
 
@@ -26,12 +26,20 @@
       <feGaussianBlur stdDeviation="4" result="blur"/>
       <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
+    <mask id="wordmarkCuts" maskUnits="userSpaceOnUse" x="-24" y="-92" width="640" height="124">
+      <rect x="-24" y="-92" width="640" height="124" fill="white"/>
+      <path d="M104-88h18L106 12H88ZM258-88h14L258 12h-18ZM414-88h16L414 12h-20Z" fill="black"/>
+    </mask>
+    <clipPath id="wordmarkSlice" clipPathUnits="userSpaceOnUse">
+      <path d="M-20-66H620v11H-20ZM-20-27H620v9H-20Z"/>
+    </clipPath>
     <clipPath id="heroClip"><path d="M38 38H1162V414L1116 460H38Z"/></clipPath>
   </defs>
 
   <style>
     text { font-family: 'Segoe UI', Arial, sans-serif; }
     .display { font-family: 'Arial Black', 'Segoe UI Black', Arial, sans-serif; font-weight: 900; }
+    .wordmark { font-family: 'Arial Black', 'Segoe UI Black', Arial, sans-serif; font-size: 76px; font-weight: 900; letter-spacing: -2px; }
     .label { font-family: Consolas, Monaco, 'Courier New', monospace; font-size: 16px; font-weight: 700; letter-spacing: 1.5px; }
     .small { font-family: Consolas, Monaco, 'Courier New', monospace; font-size: 15px; letter-spacing: 1px; }
     .body { font-size: 19px; font-weight: 500; letter-spacing: .15px; }
@@ -63,11 +71,17 @@
   </g>
   <text x="52" y="58" fill="#080a0b" class="label">PROFILE_07</text>
   <text x="64" y="128" fill="#fcee0a" font-size="22" font-weight="700" letter-spacing="5">NEON GRID // DATA FEED</text>
-  <text x="60" y="236" fill="#f6f7f8" font-size="72" class="display" letter-spacing="-1">ETHANWOD</text>
-  <text x="64" y="284" fill="#00f0ff" font-size="22" class="display" letter-spacing="2.2">COMPUTER SCIENCE · AI · SYSTEMS</text>
-  <path d="M64 318H446l18 18h126" fill="none" stroke="#fcee0a" stroke-width="5"/>
-  <circle cx="64" cy="372" r="8" fill="#00f0ff" filter="url(#cyanGlow)" class="blink"/>
-  <text x="84" y="379" fill="#e5e9ea" class="body">UPLINK ESTABLISHED</text>
+  <g transform="translate(66 238) skewX(-10)">
+    <text x="-7" y="6" fill="#ff365d" stroke="#080a0b" stroke-width="5" paint-order="stroke" class="wordmark" opacity="0.9">ETHANWOD</text>
+    <text x="0" y="0" fill="#fcee0a" stroke="#080a0b" stroke-width="5" paint-order="stroke" class="wordmark" mask="url(#wordmarkCuts)">ETHANWOD</text>
+    <text x="5" y="-3" fill="none" stroke="#00f0ff" stroke-width="2" class="wordmark" clip-path="url(#wordmarkSlice)">ETHANWOD</text>
+  </g>
+  <path d="M58 250H338l20 12h176l-24 12H352l-22-10H72Z" fill="#fcee0a"/>
+  <path d="M510 274h74l-16 8h-76z" fill="#00f0ff"/>
+  <text x="64" y="306" fill="#00f0ff" font-size="22" class="display" letter-spacing="2.2">COMPUTER SCIENCE · AI · SYSTEMS</text>
+  <path d="M64 330H430l18 16h142" fill="none" stroke="#fcee0a" stroke-width="4"/>
+  <circle cx="64" cy="390" r="8" fill="#00f0ff" filter="url(#cyanGlow)" class="blink"/>
+  <text x="84" y="397" fill="#e5e9ea" class="body">UPLINK ESTABLISHED</text>
   <text x="1040" y="452" fill="#080a0b" class="label">ONLINE</text>
 
   <!-- Rail -->
@@ -111,20 +125,20 @@
     <text x="72" y="928" fill="#f6f7f8" class="display" font-size="28">CODEBASE COMPOSITION</text>
     <text x="1128" y="928" fill="#7d898c" class="small" text-anchor="end">4 REPOS · 0.6 MiB INDEXED</text>
     <rect x="72" y="958" width="1056" height="22" rx="3" fill="#20282a"/>
-    <g><rect x="72.00" y="958" width="471.54" height="22" fill="#fcee0a"/>
-    <rect x="543.54" y="958" width="223.22" height="22" fill="#00f0ff"/>
-    <rect x="766.76" y="958" width="161.63" height="22" fill="#ff365d"/>
-    <rect x="928.39" y="958" width="71.24" height="22" fill="#7d5cff"/>
-    <rect x="999.63" y="958" width="34.07" height="22" fill="#54e38e"/>
-    <rect x="1033.70" y="958" width="29.12" height="22" fill="#ff9f1c"/>
-    <rect x="1062.81" y="958" width="23.90" height="22" fill="#c7d0d3"/>
-    <rect x="1086.71" y="958" width="41.29" height="22" fill="#547980"/></g>
+    <g><rect x="72.00" y="958" width="471.43" height="22" fill="#fcee0a"/>
+    <rect x="543.43" y="958" width="223.17" height="22" fill="#00f0ff"/>
+    <rect x="766.61" y="958" width="161.60" height="22" fill="#ff365d"/>
+    <rect x="928.20" y="958" width="71.23" height="22" fill="#7d5cff"/>
+    <rect x="999.43" y="958" width="34.06" height="22" fill="#54e38e"/>
+    <rect x="1033.49" y="958" width="29.11" height="22" fill="#ff9f1c"/>
+    <rect x="1062.60" y="958" width="23.89" height="22" fill="#c7d0d3"/>
+    <rect x="1086.49" y="958" width="41.51" height="22" fill="#547980"/></g>
     <text x="72" y="1008" fill="#687477" class="small">SOURCE · GITHUB LINGUIST BYTE COUNTS</text>
-    <text x="1128" y="1008" fill="#687477" class="small" text-anchor="end">UPDATED 2026-08-20 15:57 CST</text>
+    <text x="1128" y="1008" fill="#687477" class="small" text-anchor="end">UPDATED 2026-08-20 16:02 CST</text>
     <g transform="translate(76 1042)">
       <rect width="12" height="12" rx="2" fill="#fcee0a"/>
       <text x="28" y="12" fill="#dce2e4" class="small" font-weight="700">Python</text>
-      <text x="480" y="12" fill="#00f0ff" class="small" font-weight="700" text-anchor="end">44.7%</text>
+      <text x="480" y="12" fill="#00f0ff" class="small" font-weight="700" text-anchor="end">44.6%</text>
     </g>
     <g transform="translate(620 1042)">
       <rect width="12" height="12" rx="2" fill="#00f0ff"/>
