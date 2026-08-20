@@ -26,3 +26,11 @@ test("renderSvg positions the first bar segment at the bar origin", () => {
   assert.match(svg, /<rect x="60\.00" y="172" width="1080\.00"/);
 });
 
+test("renderSvg carries a stable data signature independent of timestamp", () => {
+  const languages = [{ name: "Python", bytes: 10, percentage: 100 }];
+  const first = renderSvg("ethanwod", 1, languages, new Date("2026-08-20T00:00:00Z"));
+  const second = renderSvg("ethanwod", 1, languages, new Date("2026-08-21T00:00:00Z"));
+  const signature = svg => svg.match(/data-signature="([a-f0-9]+)"/)?.[1];
+  assert.equal(signature(first), signature(second));
+});
+
