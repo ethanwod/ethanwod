@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/profile-interface.svg" width="100%" alt="Ethanwod cyberpunk system profile" />
+  <img src="assets/profile-interface-v2.svg" width="100%" alt="Ethanwod cinematic cyberpunk system profile" />
 </div>
 
 <div align="center">
