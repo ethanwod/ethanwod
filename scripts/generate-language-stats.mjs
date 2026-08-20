@@ -1,5 +1,6 @@
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
+import { createHash } from "node:crypto";
 
 const API_VERSION = "2022-11-28";
 const COLORS = ["#fcee0a", "#00f0ff", "#ff365d", "#7d5cff", "#54e38e", "#ff9f1c", "#c7d0d3", "#547980"];
@@ -55,6 +56,9 @@ function renderSvg(owner, repoCount, languages, generatedAt) {
   const remainder = languages.slice(7).reduce((sum, item) => sum + item.percentage, 0);
   if (remainder >= 0.05) top.push({ name: "Other", percentage: remainder });
   const totalBytes = languages.reduce((sum, item) => sum + item.bytes, 0);
+  const signature = createHash("sha256")
+    .update(JSON.stringify({ repoCount, languages: languages.map(({ name, bytes }) => [name, bytes]) }))
+    .digest("hex").slice(0, 16);
   const rows = top.length ? top : [{ name: "NO CODE DATA", percentage: 100 }];
 
   let offset = 0;
@@ -82,7 +86,7 @@ function renderSvg(owner, repoCount, languages, generatedAt) {
     hour: "2-digit", minute: "2-digit", hour12: false,
   }).format(generatedAt).replace(",", "");
 
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc" data-signature="${signature}">
   <title id="title">${escapeXml(owner)} repository language telemetry</title>
   <desc id="desc">Automatically updated language distribution across ${repoCount} public source repositories.</desc>
   <defs>
@@ -127,6 +131,16 @@ async function main() {
     data = await collectLanguages(owner, process.env.GITHUB_TOKEN);
   }
   const svg = renderSvg(owner, data.repoCount, aggregate(data.languageMaps), new Date());
+  const nextSignature = svg.match(/data-signature="([a-f0-9]+)"/)?.[1];
+  try {
+    const current = await readFile(output, "utf8");
+    if (nextSignature && current.includes(`data-signature="${nextSignature}"`)) {
+      console.log(`No language changes detected across ${data.repoCount} repositories.`);
+      return;
+    }
+  } catch (error) {
+    if (error.code !== "ENOENT") throw error;
+  }
   await mkdir(dirname(output), { recursive: true });
   await writeFile(output, svg, "utf8");
   console.log(`Wrote ${output} from ${data.repoCount} repositories.`);
