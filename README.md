@@ -1,77 +1,63 @@
 <div align="center">
-  <img src="assets/cyberpunk-banner.jpg" width="100%" alt="Cyberpunk developer banner" />
-</div>
+  <img src="assets/cyberpunk-banner.jpg" width="100%" alt="Original cyberpunk developer banner" />
 
-<div align="center">
-
-# `// ETHANWOD`
-
-### COMPUTER SCIENCE · AI · SYSTEMS
-
-![Status](https://img.shields.io/badge/SYSTEM-ONLINE-FCEE0A?style=for-the-badge&labelColor=0A0A0A)
-![Focus](https://img.shields.io/badge/FOCUS-AI_%2F_SYSTEMS-00F0FF?style=for-the-badge&labelColor=0A0A0A)
-![Profile Views](https://komarev.com/ghpvc/?username=ethanwod&style=for-the-badge&color=FCEE0A&label=NETWORK+HITS)
-
+  <h1><code>ETHANWOD // SYSTEM PROFILE</code></h1>
+  <p><code>COMPUTER SCIENCE NODE</code>　·　<code>AI / VISION</code>　·　<code>SYSTEMS</code></p>
 </div>
 
 <img src="assets/divider.svg" width="100%" alt="" />
 
-## `01 // NEURAL_LINK`
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3><code>01 // IDENTITY</code></h3>
+      <pre>USER    ethanwod
+STATUS  ONLINE
+MODE    LEARN · BUILD · SHIP
+SIGNAL  XJTU / COMPUTER SCIENCE</pre>
+      <p>I explore the layers between <b>algorithms and machines</b>, turning theory into experiments and working systems.</p>
+    </td>
+    <td width="50%" valign="top">
+      <h3><code>02 // LOADOUT</code></h3>
+      <pre>CORE     Algorithms · Data Structures
+SYSTEM   OS · Networks · Compilers
+VISION   AI · Computer Vision
+EDGE     Embedded Intelligent Systems</pre>
+      <p>Current direction: intelligent systems, low-level foundations, and practical engineering.</p>
+    </td>
+  </tr>
+</table>
 
-```text
-USER      ethanwod
-TRACK     Computer Science
-SIGNAL    Artificial Intelligence · Computer Vision · Systems
-STATUS    Learning, building, shipping.
-```
-
-I explore the layers between **algorithms and machines**—from data structures,
-compilers and operating systems to artificial intelligence and computer vision.
-
-## `02 // TECH_LOADOUT`
-
-<div align="center">
-
-![C](https://img.shields.io/badge/C-0A0A0A?style=for-the-badge&logo=c&logoColor=FCEE0A)
-![C++](https://img.shields.io/badge/C++-0A0A0A?style=for-the-badge&logo=cplusplus&logoColor=00F0FF)
-![Python](https://img.shields.io/badge/PYTHON-0A0A0A?style=for-the-badge&logo=python&logoColor=FCEE0A)
-![Linux](https://img.shields.io/badge/LINUX-0A0A0A?style=for-the-badge&logo=linux&logoColor=00F0FF)
-![Git](https://img.shields.io/badge/GIT-0A0A0A?style=for-the-badge&logo=git&logoColor=FF365D)
-![OpenCV](https://img.shields.io/badge/OPENCV-0A0A0A?style=for-the-badge&logo=opencv&logoColor=00F0FF)
-
-</div>
-
-## `03 // FIELD_LOG`
+## `03 // ACCESS_POINT`
 
 <table>
   <tr>
-    <td width="64"><b>DATA</b></td>
-    <td><a href="https://github.com/ethanwod/XJTU-CS2020"><b>XJTU-CS2020</b></a></td>
+    <td width="76" align="center"><code>DATA</code></td>
+    <td>
+      <a href="https://github.com/ethanwod/XJTU-CS2020"><b>XJTU-CS2020</b></a><br/>
+      <sub>Computer science course archive and experimental field log.</sub>
+    </td>
   </tr>
   <tr>
-    <td><b>TYPE</b></td>
-    <td>Computer science course archive and experiments</td>
-  </tr>
-  <tr>
-    <td><b>MODULES</b></td>
+    <td align="center"><code>INDEX</code></td>
     <td>AI · CV · OS · Networks · Compilers · Graphics · Algorithms · Embedded Systems</td>
   </tr>
 </table>
 
-## `04 // TELEMETRY`
+## `04 // ACTIVE_PROTOCOL`
 
-<div align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=ethanwod&show_icons=true&hide_border=true&bg_color=0A0A0A&title_color=FCEE0A&text_color=E6E6E6&icon_color=00F0FF&ring_color=FF365D" alt="GitHub stats" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ethanwod&layout=compact&hide_border=true&bg_color=0A0A0A&title_color=FCEE0A&text_color=E6E6E6" alt="Top languages" />
-</div>
+```text
+[01] Understand the system.
+[02] Reduce the noise.
+[03] Build the smallest thing that works.
+[04] Push beyond the specification.
+```
 
 <img src="assets/divider.svg" width="100%" alt="" />
 
 <div align="center">
-
-`WAKE THE CODE. BREAK THE LOOP.`
-
-<sub>Original cyberpunk profile design · inspired by dystopian future-tech interfaces</sub>
-
+  <code>WAKE THE CODE // BREAK THE LOOP</code>
+  <br/><br/>
+  <sub>Original dystopian future-tech interface · no external image dependencies</sub>
 </div>
 
