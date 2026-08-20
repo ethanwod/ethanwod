@@ -37,13 +37,16 @@
   </defs>
 
   <style>
-    text { font-family: 'Segoe UI', Arial, sans-serif; }
-    .display { font-family: 'Arial Black', 'Segoe UI Black', Arial, sans-serif; font-weight: 900; }
+    text { font-family: 'Segoe UI Variable Text', 'Segoe UI', Helvetica, Arial, sans-serif; }
+    .display { font-family: Bahnschrift, 'Arial Narrow', 'Segoe UI', sans-serif; font-weight: 700; letter-spacing: .7px; }
     .wordmark { font-family: 'Arial Black', 'Segoe UI Black', Arial, sans-serif; font-size: 76px; font-weight: 900; letter-spacing: -2px; }
-    .label { font-family: Consolas, Monaco, 'Courier New', monospace; font-size: 16px; font-weight: 700; letter-spacing: 1.5px; }
-    .small { font-family: Consolas, Monaco, 'Courier New', monospace; font-size: 15px; letter-spacing: 1px; }
+    .label { font-family: Bahnschrift, 'Arial Narrow', 'Segoe UI', sans-serif; font-size: 15px; font-weight: 700; letter-spacing: 1.8px; }
+    .small { font-family: 'Segoe UI Variable Text', 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 500; letter-spacing: .65px; }
+    .key { font-family: 'Segoe UI Variable Text', 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 650; letter-spacing: 1.25px; }
+    .value { font-family: 'Segoe UI Variable Text', 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 19px; font-weight: 600; letter-spacing: .2px; }
+    .language { font-family: Bahnschrift, 'Arial Narrow', 'Segoe UI', sans-serif; font-size: 18px; font-weight: 600; letter-spacing: .45px; }
+    .percentage { font-family: Bahnschrift, 'Segoe UI Variable Text', 'Segoe UI', sans-serif; font-size: 16px; font-weight: 600; font-variant-numeric: tabular-nums; letter-spacing: .35px; }
     .body { font-size: 19px; font-weight: 500; letter-spacing: .15px; }
-    .mono { font-family: Consolas, Monaco, 'Courier New', monospace; }
     .blink { animation: blink 1.6s steps(2,end) infinite; }
     .scan { animation: scan 7s linear infinite; }
     .flow { stroke-dasharray: 18 12; animation: flow 1.5s linear infinite; }
@@ -94,22 +97,31 @@
     <rect x="596" y="566" width="12" height="252" fill="#00f0ff"/>
   </g>
 
-  <text x="76" y="612" fill="#fcee0a" class="label">01 // IDENTITY</text>
-  <text x="76" y="660" fill="#7d898c" class="small">USER</text>
-  <text x="200" y="660" fill="#f6f7f8" class="body">ethanwod</text>
-  <text x="76" y="704" fill="#7d898c" class="small">STATUS</text>
-  <text x="200" y="704" fill="#00f0ff" class="body blink">ONLINE</text>
-  <text x="76" y="748" fill="#7d898c" class="small">MODE</text>
-  <text x="200" y="748" fill="#f6f7f8" class="body">LEARN · BUILD · SHIP</text>
+  <text x="76" y="612" fill="#fcee0a" class="label">01 / IDENTITY</text>
+  <text x="532" y="612" fill="#4d575a" class="small" text-anchor="end">PERSONAL NODE</text>
+  <path d="M76 628H532" fill="none" stroke="#252d2f"/>
+  <text x="76" y="660" fill="#899497" class="key">USER</text>
+  <text x="200" y="660" fill="#f6f7f8" class="value">ethanwod</text>
+  <path d="M200 674H532" fill="none" stroke="#202729"/>
+  <text x="76" y="704" fill="#899497" class="key">STATUS</text>
+  <circle cx="205" cy="697" r="4" fill="#00f0ff" filter="url(#cyanGlow)"/>
+  <text x="220" y="704" fill="#00f0ff" class="value">ONLINE</text>
+  <path d="M200 718H532" fill="none" stroke="#202729"/>
+  <text x="76" y="748" fill="#899497" class="key">MODE</text>
+  <text x="200" y="748" fill="#f6f7f8" class="value">LEARN · BUILD · SHIP</text>
   <text x="76" y="782" fill="#899497" font-size="16">Algorithms meet machines.</text>
 
-  <text x="634" y="612" fill="#00f0ff" class="label">02 // LOADOUT</text>
-  <text x="634" y="660" fill="#7d898c" class="small">CORE</text>
-  <text x="752" y="660" fill="#f6f7f8" class="body">Algorithms · Data</text>
-  <text x="634" y="704" fill="#7d898c" class="small">SYSTEM</text>
-  <text x="752" y="704" fill="#f6f7f8" class="body">OS · Net · Compiler</text>
-  <text x="634" y="748" fill="#7d898c" class="small">VISION</text>
-  <text x="752" y="748" fill="#f6f7f8" class="body">AI · Computer Vision</text>
+  <text x="634" y="612" fill="#00f0ff" class="label">02 / LOADOUT</text>
+  <text x="1124" y="612" fill="#4d575a" class="small" text-anchor="end">CAPABILITY MAP</text>
+  <path d="M634 628H1124" fill="none" stroke="#252d2f"/>
+  <text x="634" y="660" fill="#899497" class="key">CORE</text>
+  <text x="752" y="660" fill="#f6f7f8" class="value">Algorithms · Data</text>
+  <path d="M752 674H1124" fill="none" stroke="#202729"/>
+  <text x="634" y="704" fill="#899497" class="key">SYSTEM</text>
+  <text x="752" y="704" fill="#f6f7f8" class="value">OS · Net · Compiler</text>
+  <path d="M752 718H1124" fill="none" stroke="#202729"/>
+  <text x="634" y="748" fill="#899497" class="key">VISION</text>
+  <text x="752" y="748" fill="#f6f7f8" class="value">AI · Computer Vision</text>
   <text x="634" y="782" fill="#899497" font-size="16">Practical engineering, end to end.</text>
 
   <!-- TELEMETRY_SLOT -->
