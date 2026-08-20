@@ -1,9 +1,5 @@
 <div align="center">
-  <img src="assets/profile-interface-v2.svg" width="100%" alt="Ethanwod cinematic cyberpunk system profile" />
-</div>
-
-<div align="center">
-  <img src="assets/language-stats.svg" width="100%" alt="Live language distribution across Ethanwod's public repositories" />
+  <img src="assets/profile-dashboard.svg" width="100%" alt="Ethanwod unified cyberpunk profile with live repository language telemetry" />
 </div>
 
 <div align="center">
