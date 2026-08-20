@@ -105,7 +105,7 @@ function renderSvg(owner, repoCount, languages, generatedAt) {
   <rect width="1200" height="520" rx="16" fill="url(#grid)" opacity=".72"/>
   <path d="M38 36H1162V474L1118 494H38Z" fill="#0f1314" stroke="#fcee0a" stroke-width="3"/>
   <rect x="38" y="36" width="1124" height="54" fill="#fcee0a"/>
-  <text x="62" y="72" fill="#080a0b" class="mono" font-size="18" font-weight="700" letter-spacing="2">04 // LANGUAGE TELEMETRY</text>
+  <text x="62" y="72" fill="#080a0b" class="mono" font-size="18" font-weight="700" letter-spacing="2">03 // LANGUAGE TELEMETRY</text>
   <circle cx="1098" cy="63" r="7" fill="#00f0ff" filter="url(#glow)"/>
   <text x="1080" y="69" fill="#080a0b" class="mono" font-size="15" font-weight="700" text-anchor="end">LIVE</text>
   <text x="60" y="137" fill="#f6f7f8" class="display" font-size="30">CODEBASE COMPOSITION</text>
@@ -134,7 +134,7 @@ async function main() {
   const nextSignature = svg.match(/data-signature="([a-f0-9]+)"/)?.[1];
   try {
     const current = await readFile(output, "utf8");
-    if (nextSignature && current.includes(`data-signature="${nextSignature}"`)) {
+    if (!process.env.FORCE_UPDATE && nextSignature && current.includes(`data-signature="${nextSignature}"`)) {
       console.log(`No language changes detected across ${data.repoCount} repositories.`);
       return;
     }
