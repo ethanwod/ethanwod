@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+  <title id="title">ethanwod repository language telemetry</title>
+  <desc id="desc">Automatically updated language distribution across 4 public source repositories.</desc>
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#1b2224"/></pattern>
+    <filter id="glow"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <style>
+    text { font-family: 'Segoe UI', Arial, sans-serif; }
+    .display { font-family: 'Arial Black', 'Segoe UI Black', Arial, sans-serif; font-weight: 900; }
+    .mono, .name, .value { font-family: Consolas, Monaco, monospace; }
+    .name { fill: #dce2e4; font-size: 18px; font-weight: 700; }
+    .value { fill: #00f0ff; font-size: 18px; font-weight: 700; }
+  </style>
+  <rect width="1200" height="520" rx="16" fill="#080a0b"/>
+  <rect x="1" y="1" width="1198" height="518" rx="15" fill="none" stroke="#30383a" stroke-width="2"/>
+  <rect width="1200" height="520" rx="16" fill="url(#grid)" opacity=".72"/>
+  <path d="M38 36H1162V474L1118 494H38Z" fill="#0f1314" stroke="#fcee0a" stroke-width="3"/>
+  <rect x="38" y="36" width="1124" height="54" fill="#fcee0a"/>
+  <text x="62" y="72" fill="#080a0b" class="mono" font-size="18" font-weight="700" letter-spacing="2">04 // LANGUAGE TELEMETRY</text>
+  <circle cx="1098" cy="63" r="7" fill="#00f0ff" filter="url(#glow)"/>
+  <text x="1080" y="69" fill="#080a0b" class="mono" font-size="15" font-weight="700" text-anchor="end">LIVE</text>
+  <text x="60" y="137" fill="#f6f7f8" class="display" font-size="30">CODEBASE COMPOSITION</text>
+  <text x="1140" y="137" fill="#7d898c" class="mono" font-size="15" text-anchor="end">4 REPOS · 0.6 MiB INDEXED</text>
+  <rect x="60" y="172" width="1080" height="24" rx="3" fill="#20282a"/>
+  <g clip-path="inset(0 round 3px)"><rect x="60.00" y="172" width="489.73" height="24" fill="#fcee0a"/>
+    <rect x="549.73" y="172" width="231.84" height="24" fill="#00f0ff"/>
+    <rect x="781.57" y="172" width="167.87" height="24" fill="#ff365d"/>
+    <rect x="949.44" y="172" width="73.99" height="24" fill="#7d5cff"/>
+    <rect x="1023.43" y="172" width="35.38" height="24" fill="#54e38e"/>
+    <rect x="1058.81" y="172" width="30.24" height="24" fill="#ff9f1c"/>
+    <rect x="1089.05" y="172" width="24.82" height="24" fill="#c7d0d3"/>
+    <rect x="1113.87" y="172" width="26.13" height="24" fill="#547980"/></g>
+  <g transform="translate(64 244)">
+      <rect width="12" height="12" rx="2" fill="#fcee0a"/>
+      <text x="28" y="12" class="name">Python</text>
+      <text x="500" y="12" class="value" text-anchor="end">45.3%</text>
+    </g>
+    <g transform="translate(622 244)">
+      <rect width="12" height="12" rx="2" fill="#00f0ff"/>
+      <text x="28" y="12" class="name">C++</text>
+      <text x="500" y="12" class="value" text-anchor="end">21.5%</text>
+    </g>
+    <g transform="translate(64 296)">
+      <rect width="12" height="12" rx="2" fill="#ff365d"/>
+      <text x="28" y="12" class="name">C</text>
+      <text x="500" y="12" class="value" text-anchor="end">15.5%</text>
+    </g>
+    <g transform="translate(622 296)">
+      <rect width="12" height="12" rx="2" fill="#7d5cff"/>
+      <text x="28" y="12" class="name">Verilog</text>
+      <text x="500" y="12" class="value" text-anchor="end">6.9%</text>
+    </g>
+    <g transform="translate(64 348)">
+      <rect width="12" height="12" rx="2" fill="#54e38e"/>
+      <text x="28" y="12" class="name">Cool</text>
+      <text x="500" y="12" class="value" text-anchor="end">3.3%</text>
+    </g>
+    <g transform="translate(622 348)">
+      <rect width="12" height="12" rx="2" fill="#ff9f1c"/>
+      <text x="28" y="12" class="name">Lex</text>
+      <text x="500" y="12" class="value" text-anchor="end">2.8%</text>
+    </g>
+    <g transform="translate(64 400)">
+      <rect width="12" height="12" rx="2" fill="#c7d0d3"/>
+      <text x="28" y="12" class="name">Yacc</text>
+      <text x="500" y="12" class="value" text-anchor="end">2.3%</text>
+    </g>
+    <g transform="translate(622 400)">
+      <rect width="12" height="12" rx="2" fill="#547980"/>
+      <text x="28" y="12" class="name">Other</text>
+      <text x="500" y="12" class="value" text-anchor="end">2.4%</text>
+    </g>
+  <path d="M60 470H430l18 18h430l18-18h244" fill="none" stroke="#ff365d" stroke-width="3"/>
+  <text x="60" y="453" fill="#687477" class="mono" font-size="13">SOURCE · GITHUB LINGUIST BYTE COUNTS</text>
+  <text x="1140" y="453" fill="#687477" class="mono" font-size="13" text-anchor="end">UPDATED 2026-08-20 15:44 CST</text>
+</svg>
+
